@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h2 class="main-heading">EXPENSE TRACKER</h2> 
+        <h4 class="total">TOTAL BALANCE</h4>
+        <h1 id="balance">₹100.00</h1>
+
+        <div class="income-expense">
+            <div class="income">
+                <h3>INCOME</h3>
+                <h2 id="money-plus">₹0.00</h2>
+            </div>
+            <div class="expense">
+                <h3>EXPENSE</h3>
+                <h2 id="money-minus">₹0.00</h2>
+            </div>
+        </div>
+
+        <div class="history">
+            <h3>HISTORY</h3>
+            <ul id="list" class="list">                
+                <li class="minus">
+                    Cash <span>-₹400.00</span>
+                    <i class="fa-solid fa-trash delete-btn" ></i>
+                </li>
+                <li class="plus">
+                    Cash <span>₹400.00</span>
+                    <i class="fa-solid fa-trash delete-btn"></i>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="transaction-form">
+            <h3>ADD TRANSACTION</h3>
+            <form  id="form">                
+                <div class="form-control">
+                    <label for="Text">PURPOSE OF TRANSACTION</label>
+                    <input type="text" id="text" placeholder="Write the purpose of transaction">
+                </div>    
+                <div class="form-control">
+                    <label class="amount-label" for="amount">AMOUNT OF TRANSACTION <br> (Add '-' before expense amount & Add '+' before income amount)</label>
+                    <input type="number" id="amount" placeholder="Add '-' before expense amount & Add '+' before income amount" >
+                </div>   
+                
+                <button class="btn">CALCULATE TOTAL BALANCE</button>
+            </form>
+        </div>
+    </div>
+    <!-- Javascript Link -->
+    <script src="https://kit.fontawesome.com/eee2ca9918.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

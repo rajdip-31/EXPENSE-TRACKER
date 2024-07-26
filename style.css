@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 500px;
+    margin: auto;
+    background-color: black;
+    color: blue;
+    height: 100%;
+    padding: 2rem;
+}
+.main-heading{
+    text-align: center;
+    padding: 2rem;
+}
+.total{
+    padding-left: 2rem;
+}
+#balance{
+    padding-left: 2rem;
+}
+.income-expense{
+    display: flex;
+    padding: 2rem;
+    margin: 0.5rem auto;
+    box-shadow: blue 0px 2px 5px -1px, blue 0px 1px 3px -1px;
+}
+.income, .expense{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    width: 50%;
+    padding: 2rem;
+    background-color: aliceblue;
+    box-shadow: blue 0px 2px 5px -1px, blue 0px 1px 3px -1px;
+}
+.income h2{
+    color: rgb(5, 123, 5);
+}
+.expense h2{
+    color: rgb(255, 0, 0);
+}
+
+.history{
+    padding: 2rem;
+    margin: 0.5rem auto;
+    box-shadow: blue 0px 2px 5px -1px, blue 0px 1px 3px -1px;
+}
+.history h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.history ul{
+    box-shadow: blue 0px 2px 5px -1px, blue 0px 1px 3px -1px;
+    overflow-y: auto;
+}
+.history ul li i{
+    color: red;
+    font-size: 1.3rem;
+    background: black;
+    outline: none;
+}
+.minus,.plus{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+    box-shadow: blue 0px 2px 5px -1px, blue 0px 1px 3px -1px;
+
+}
+.plus{
+    border-right: 4px solid green;
+}
+.minus{
+    border-right: 4px solid red;
+}
+.transaction-form{
+    margin: 0.5rem auto;
+    padding: 2rem;
+    box-shadow: blue 0px 2px 5px -1px, blue 0px 1px 3px -1px;
+}
+.transaction-form h3{
+    font-size: 1.5rem;
+}
+.form-control{
+    padding:1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#text, #amount{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:1rem; 
+    border: none;
+    border-radius: 0.6rem; 
+    font-size: 0.6rem;  
+    text-transform: uppercase;
+}
+.amount-label{
+    font-size: medium !important;
+    padding: 0 !important;
+}
+label{
+    font-size: 1.3rem;
+}
+
+.btn{
+    padding: 1rem;
+    width: 100%;
+    background-color: black;
+    border: 2px solid rgb(35, 220, 35);
+    color: rgb(35, 220, 35);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
